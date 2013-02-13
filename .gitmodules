@@ -1,0 +1,6 @@
+[submodule "Mailstrap/Controls/IndeterminateProgressView"]
+	path = Mailstrap/Controls/IndeterminateProgressView
+	url = https://github.com/evanlucas/IndeterminateProgressView
+[submodule "Mailstrap/Utils/AFNetworking"]
+	path = Mailstrap/Utils/AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking
