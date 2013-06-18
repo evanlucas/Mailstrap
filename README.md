@@ -5,7 +5,7 @@ Mailstrap allows one to connect to his or her [Mailgun](http://mailgun.com) acco
 
 #### Description
 
-Mailstrap makes administrating email even easier.  Built around Mailgun's rich set of APIs, Mailstrap allows you to manage you account directly from your iPhone, iPad, or iPod.  Whether you want to just check the status of a mailbox, or create a full-blown mailing list, Mailstrap is here to make things easier.  Mailstrap allows manipulation of the following endpoints.
+Mailstrap makes administering email even easier.  Built around Mailgun's rich set of APIs, Mailstrap allows you to manage you account directly from your iPhone, iPad, or iPod.  Whether you want to just check the status of a mailbox, or create a full-blown mailing list, Mailstrap is here to make things easier.  Mailstrap allows manipulation of the following endpoints.
 - Domains
 - Mailboxes
 - Mailing Lists
@@ -29,7 +29,8 @@ Mailgun helps take the headache out of email.  It gets easier every day.  Please
 Mailstrap was built with the iOS 6.0 SDK, but targets iOS 5.0. 
 To run:
 	
-	git clone https://github.com/evanlucas/Mailstrap
+	git clone https://github.com/evanlucas/Mailstrap Mailstrap
+	cd Mailstrap
 	git submodule update --init
 
 Then, you can Build and Run in Xcode

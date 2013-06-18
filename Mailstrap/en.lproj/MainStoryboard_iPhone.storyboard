@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ded-pY-QCF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="13A476u" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ded-pY-QCF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Navigation View Controller i Phone - Mailstrap-->
@@ -1930,7 +1930,7 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
                         <view key="tableFooterView" opaque="NO" contentMode="scaleToFill" id="FEB-KC-Ufr">
-                            <rect key="frame" x="0.0" y="444" width="320" height="89"/>
+                            <rect key="frame" x="0.0" y="509" width="320" height="89"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Developer/Designer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AZh-YI-PUf">
@@ -2000,16 +2000,39 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection id="B1f-8t-ljp">
+                            <tableViewSection id="tfo-tC-Auu">
                                 <cells>
-                                    <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="RQi-iz-nlp" style="IBUITableViewCellStyleDefault" id="W7P-s4-f6d" customClass="LoginTopTableCell">
+                                    <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="xdM-Sn-k7x" style="IBUITableViewCellStyleDefault" id="rKH-uk-Snq" customClass="LoginSingleTableCell">
                                         <rect key="frame" x="0.0" y="280" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Rate Mailstrap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RQi-iz-nlp">
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Rate Mailstrap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xdM-Sn-k7x">
+                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="B1f-8t-ljp">
+                                <cells>
+                                    <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="RQi-iz-nlp" style="IBUITableViewCellStyleDefault" id="W7P-s4-f6d" customClass="LoginTopTableCell">
+                                        <rect key="frame" x="0.0" y="345" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Visit curapps.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RQi-iz-nlp">
                                                     <rect key="frame" x="10" y="0.0" width="280" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -2022,13 +2045,13 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="7uy-p2-KWU" style="IBUITableViewCellStyleDefault" id="WfN-yZ-FB1" customClass="LoginBottomTableCell">
-                                        <rect key="frame" x="0.0" y="325" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="390" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Visit curapps.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7uy-p2-KWU">
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="View on Github" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7uy-p2-KWU">
                                                     <rect key="frame" x="10" y="0.0" width="280" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -2045,7 +2068,7 @@
                             <tableViewSection id="ROV-om-SkC">
                                 <cells>
                                     <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="PTL-Jb-43Q" style="IBUITableViewCellStyleDefault" id="hd8-Oo-rnK" customClass="LoginSingleTableCell">
-                                        <rect key="frame" x="0.0" y="389" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="454" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="280" height="43"/>
@@ -2202,6 +2225,276 @@
         <image name="alert-blue.png" width="10" height="42"/>
         <image name="alert-gray.png" width="10" height="42"/>
     </resources>
+    <classes>
+        <class className="AboutViewController" superclassName="ModalTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissMe:"/>
+                <relationship kind="outlet" name="textViewAttributes" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="AcknowledgementsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AcknowledgementsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="AddBounceViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddBounceViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tappedSaveBtn:"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="textAddress" candidateClass="LargeTextField"/>
+                <relationship kind="outlet" name="textCode" candidateClass="LargeTextField"/>
+                <relationship kind="outlet" name="textError" candidateClass="LargeTextView"/>
+            </relationships>
+        </class>
+        <class className="AddComplaintViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddComplaintViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tappedSaveBtn:"/>
+                <relationship kind="outlet" name="textAddress" candidateClass="LargeTextField"/>
+            </relationships>
+        </class>
+        <class className="AddDomainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddDomainViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tappedSaveButton:"/>
+                <relationship kind="outlet" name="textDomain" candidateClass="LargeTextField"/>
+            </relationships>
+        </class>
+        <class className="AddMailboxViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddMailboxViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tappedSave:"/>
+                <relationship kind="outlet" name="textMailbox" candidateClass="LargeTextField"/>
+                <relationship kind="outlet" name="textPassword" candidateClass="LargeTextField"/>
+            </relationships>
+        </class>
+        <class className="AddUnsubscribeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddUnsubscribeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tappedSaveBtn:"/>
+                <relationship kind="outlet" name="textAddress" candidateClass="LargeTextField"/>
+                <relationship kind="outlet" name="textTag" candidateClass="LargeTextField"/>
+            </relationships>
+        </class>
+        <class className="BouncesViewController" superclassName="ModalTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BouncesViewController.h"/>
+        </class>
+        <class className="CampaignDetailViewController" superclassName="ModalTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CampaignDetailViewController.h"/>
+        </class>
+        <class className="CampaignsViewController" superclassName="ModalTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CampaignsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissMe:"/>
+            </relationships>
+        </class>
+        <class className="ComplaintsTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ComplaintsTableCell.h"/>
+        </class>
+        <class className="ComplaintsViewController" superclassName="ModalTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ComplaintsViewController.h"/>
+        </class>
+        <class className="CreateCampaignViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreateCampaignViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tappedSaveButton:"/>
+                <relationship kind="outlet" name="textCampaignID" candidateClass="LargeTextField"/>
+                <relationship kind="outlet" name="textName" candidateClass="LargeTextField"/>
+            </relationships>
+        </class>
+        <class className="DomainSelectionViewController" superclassName="ModalTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DomainSelectionViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissMe:"/>
+            </relationships>
+        </class>
+        <class className="DomainTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DomainTableCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="DomainsViewController" superclassName="ModalTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DomainsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissMe:"/>
+            </relationships>
+        </class>
+        <class className="EditMailingListViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditMailingListViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tappedMembersBtn:"/>
+                <relationship kind="action" name="tappedSaveBtn:"/>
+                <relationship kind="outlet" name="buttonMembers" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="segControlAccessLevel" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="textAddress" candidateClass="LargeTextField"/>
+                <relationship kind="outlet" name="textDescription" candidateClass="LargeTextView"/>
+                <relationship kind="outlet" name="textName" candidateClass="LargeTextField"/>
+            </relationships>
+        </class>
+        <class className="EmptyTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EmptyTableCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="LargeTextField" superclassName="UITextField">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LargeTextField.h"/>
+        </class>
+        <class className="LargeTextView" superclassName="UITextView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LargeTextView.h"/>
+        </class>
+        <class className="LoginAPIKeyViewController" superclassName="ModalTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginAPIKeyViewController.h"/>
+        </class>
+        <class className="LoginBottomTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginBottomTableCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="textfield" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="LoginContainerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginContainerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changedLoginType:"/>
+                <relationship kind="action" name="tappedDoneButton:"/>
+                <relationship kind="outlet" name="containerView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="labelError" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="segControlLoginType" candidateClass="UISegmentedControl"/>
+            </relationships>
+        </class>
+        <class className="LoginSingleTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginSingleTableCell.h"/>
+        </class>
+        <class className="LoginTopTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginTopTableCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="textfield" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="LoginUsernameViewController" superclassName="ModalTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginUsernameViewController.h"/>
+        </class>
+        <class className="LogsTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LogsTableCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="labelCreatedAt" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelHap" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="log_type" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="message" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="message_id" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="LogsViewController" superclassName="ModalTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LogsViewController.h"/>
+        </class>
+        <class className="MailboxTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MailboxTableCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="sizeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MailboxesViewController" superclassName="ModalTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MailboxesViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissMe:"/>
+            </relationships>
+        </class>
+        <class className="MailingListAddMemberViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MailingListAddMemberViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tappedSaveButton:"/>
+                <relationship kind="outlet" name="switchSubscribed" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switchUpsert" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="textAddress" candidateClass="LargeTextField"/>
+                <relationship kind="outlet" name="textName" candidateClass="LargeTextField"/>
+            </relationships>
+        </class>
+        <class className="MailingListMembersViewController" superclassName="ModalTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MailingListMembersViewController.h"/>
+        </class>
+        <class className="MailingListTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MailingListTableCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="labelAccessLevel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelAddress" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelDescription" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelMembersCount" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelName" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MailingListsViewController" superclassName="ModalTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MailingListsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissMe:"/>
+                <relationship kind="action" name="tappedAddButton:"/>
+            </relationships>
+        </class>
+        <class className="ModalTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ModalTableViewController.h"/>
+        </class>
+        <class className="NavigationViewController_iPhone" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NavigationViewController_iPhone.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mainScrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="RouteActionTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RouteActionTableCell.h"/>
+        </class>
+        <class className="RouteActionsViewController" superclassName="ModalTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RouteActionsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tappedAddButton:"/>
+                <relationship kind="action" name="tappedDoneButton:"/>
+            </relationships>
+        </class>
+        <class className="RouteDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RouteDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tappedSaveBtn:"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="textDescription" candidateClass="LargeTextView"/>
+                <relationship kind="outlet" name="textExpression" candidateClass="LargeTextField"/>
+                <relationship kind="outlet" name="textPriority" candidateClass="LargeTextField"/>
+            </relationships>
+        </class>
+        <class className="RoutesViewController" superclassName="ModalTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RoutesViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissMe:"/>
+                <relationship kind="action" name="tappedAddBtn:"/>
+            </relationships>
+        </class>
+        <class className="SettingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissMe:"/>
+                <relationship kind="action" name="tappedLogout:"/>
+                <relationship kind="action" name="tappedSaveAction:"/>
+                <relationship kind="outlet" name="switchShowPostmaster" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="textAPIKey" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="SingleTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleTableCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="textfield" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="TableViewBackgroundView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TableViewBackgroundView.h"/>
+        </class>
+        <class className="UnsubscribesViewController" superclassName="ModalTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UnsubscribesViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

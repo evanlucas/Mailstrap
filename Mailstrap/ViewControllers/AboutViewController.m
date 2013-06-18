@@ -31,6 +31,9 @@
 - (void)showCurapps {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://curapps.com"]];
 }
+- (void)showOnGithub {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://github.com/evanlucas/Mailstrap"]];
+}
 - (void)showMailgun {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://mailgun.com"]];
 }
@@ -52,20 +55,23 @@
             [self showMailgun];
         }
     } else if (indexPath.section == 1) {
+        // Rate
+        
+        BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Thanks for using Mailstrap" message:@"If you have enjoyed using Mailstrap, please take a moment to rate it."];
+        [alert setCancelButtonWithTitle:@"No, thanks" block:^{
+            
+        }];
+        [alert addButtonWithTitle:@"Rate Now" block:^{
+            
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/mailstrap/id593668123?ls=1&mt=8"]];
+        }];
+        [alert show];
+    } else if (indexPath.section == 2) {
         if (indexPath.row == 0) {
-            // Rate
-
-            BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Thanks for using Mailstrap" message:@"If you have enjoyed using Mailstrap, please take a moment to rate it."];
-            [alert setCancelButtonWithTitle:@"No, thanks" block:^{
-                
-            }];
-            [alert addButtonWithTitle:@"Rate Now" block:^{
-                
-                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/mailstrap/id593668123?ls=1&mt=8"]];
-            }];
-            [alert show];
-        } else {
             [self showCurapps];
+            
+        } else if (indexPath.row == 1) {
+            [self showOnGithub];
         }
     }
 }

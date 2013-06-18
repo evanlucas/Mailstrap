@@ -34,7 +34,7 @@ static APIController *controller = nil;
         log_detail(@"No password provided");
         errBlock(@{@"status": @"error", @"message": @"No password provided"});
     }
-    NSString *urlString = @"https://mailgun.net";
+    NSString *urlString = @"https://mailgun.com";
     NSDictionary *formData = @{@"email" : username, @"password": password, @"remember": @"1", @"submit": @"Login"};
     NSURL *url = [NSURL URLWithString:urlString];
     AFHTTPClient *client = [AFHTTPClient clientWithBaseURL:url];

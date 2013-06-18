@@ -3,7 +3,7 @@
 
 //#define NO_CAMPAIGNS
 //#define IN_BETA
-#define MAILSTRAP_VERSION @"1.0.1"
+#define MAILSTRAP_VERSION @"1.0.2"
 
 
 #pragma mark Segues
