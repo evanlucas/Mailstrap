@@ -25,7 +25,7 @@ typedef void (^MGErr)(NSDictionary *error);
 @property (nonatomic, strong) NSString *apiKey;
 @property (nonatomic, strong) NSString *currentDomain;
 @property (nonatomic) BOOL shouldShowPostmaster;
-
+@property (nonatomic) BOOL shouldOrderResults;
 // Temp
 - (void)loginWithUsername:(NSString *)username password:(NSString *)password res:(MGRes)resBlock err:(MGErr)errBlock;
 - (void)loginWithAPIKey:(NSString *)apiKey res:(MGRes)resBlock err:(MGErr)errBlock;

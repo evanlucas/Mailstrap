@@ -67,7 +67,7 @@
             if (self.username) {
                 cell.textfield.text = self.username;
             }
-            PRINT_RECT(@"Top Table Cell", cell.frame);
+            //PRINT_RECT(@"Top Table Cell", cell.frame);
             return cell;
         } else {
             LoginBottomTableCell *cell = (LoginBottomTableCell *)[self.tableView dequeueReusableCellWithIdentifier:@"LoginBottomTableCell"];

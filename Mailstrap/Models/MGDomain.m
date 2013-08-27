@@ -20,6 +20,9 @@
 + (MGDomain *)fromJSON:(NSDictionary *)jsonDict {
     return [[MGDomain alloc] initWithAttributes:jsonDict];
 }
++ (NSArray *)sortResults:(NSArray *)res {
+  return [NSArray arrayWithArray:[res sortedArrayUsingSelector:@selector(compare:)]];
+}
 + (void)getDomainsWithBlock:(void (^)(NSArray *, NSDictionary *))block {
     [[APIController sharedInstance] getDomainsWithRes:^(NSDictionary *res){
         NSArray *domains = [res objectForKey:@"items"];
@@ -29,7 +32,12 @@
             [mutableDomains addObject:domain];
         }
         if (block) {
+          if ([[APIController sharedInstance] shouldOrderResults]) {
+            NSArray *a = [self sortResults:mutableDomains];
+            block([NSArray arrayWithArray:a], nil);
+          } else {
             block([NSArray arrayWithArray:mutableDomains], nil);
+          }
         }
     }err:^(NSDictionary *error) {
         if (block) {
@@ -37,6 +45,12 @@
         }
     }];
 }
+- (NSComparisonResult)compare:(MGDomain *)dom {
+  return [self.name compare:dom.name];
+}
+
+
+
 + (void)getDomain:(NSString *)domain withRes:(MGRes)res err:(MGErr)err {
     [[APIController sharedInstance] getDomain:domain withRes:res err:err];
 }

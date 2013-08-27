@@ -13,8 +13,9 @@
 @interface SettingsViewController : UIViewController
 - (IBAction)tappedSaveAction:(id)sender;
 - (IBAction)dismissMe:(id)sender;
+- (IBAction)tappedLogout:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField *textAPIKey;
 @property (nonatomic, weak) IBOutlet UISwitch *switchShowPostmaster;
-- (IBAction)tappedLogout:(id)sender;
+@property (strong, nonatomic) IBOutlet UISwitch *switchOrderResults;
 @property (nonatomic, assign) id<SettingsDelegate> delegate;
 @end

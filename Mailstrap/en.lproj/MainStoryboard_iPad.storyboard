@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="13A476u" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="Rs4-yS-U8W">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="13A558" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="Rs4-yS-U8W">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -184,6 +184,18 @@
                                             <action selector="tappedLogout:" destination="aLX-jY-B8q" eventType="touchUpInside" id="i6T-uv-cI4"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Alphabetize Results:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HTB-wC-sKt">
+                                        <rect key="frame" x="20" y="230" width="377" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="7UO-wo-oX9">
+                                        <rect key="frame" x="443" y="227" width="79" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="onTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </switch>
                                 </subviews>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="API Key:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YMo-9i-wOr">
@@ -230,6 +242,7 @@
                     </navigationItem>
                     <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="switchOrderResults" destination="7UO-wo-oX9" id="zNX-VO-qf3"/>
                         <outlet property="switchShowPostmaster" destination="k8c-2E-yKO" id="GV2-C2-Aya"/>
                         <outlet property="textAPIKey" destination="f7k-yH-KSj" id="FBX-22-Oh8"/>
                     </connections>
@@ -2464,6 +2477,7 @@
                 <relationship kind="action" name="dismissMe:"/>
                 <relationship kind="action" name="tappedLogout:"/>
                 <relationship kind="action" name="tappedSaveAction:"/>
+                <relationship kind="outlet" name="switchOrderResults" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="switchShowPostmaster" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="textAPIKey" candidateClass="UITextField"/>
             </relationships>

@@ -17,4 +17,5 @@
 + (void)getDomain:(NSString *)domain withRes:(MGRes)res err:(MGErr)err;
 + (void)deleteDomain:(NSString *)domain withRes:(MGRes)res err:(MGErr)err;
 + (void)createDomain:(NSString *)domain withRes:(MGRes)res err:(MGErr)err;
+- (NSComparisonResult)compare:(MGDomain *)dom;
 @end
