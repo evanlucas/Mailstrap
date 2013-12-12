@@ -9,7 +9,6 @@
 #endif
 
 #ifdef __OBJC__
-    #define RELEASE
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <SystemConfiguration/SystemConfiguration.h>
