@@ -124,45 +124,30 @@ static APIController *controller = nil;
 - (BOOL)parseStringForCodeBlock:(NSString *)s {
   NSScanner *scanner = [NSScanner scannerWithString:s];
   // Make sure that the account information header is available
-  if(![scanner scanUpToString:@"<h1>Account Information</h1>" intoString:nil]) {
+  if(![scanner scanUpToString:@"<h5>API Key</h5>" intoString:nil]) {
     log_detail(@"Unable to find account information");
     return NO;
   }
   
   // Make sure we can find the <code> block (that is where the API Key resides)
   NSString *totalCodeBlock = NULL;
-  if (![scanner scanUpToString:@"<code>" intoString:nil]) {
-    log_detail(@"Unable to find <code> block");
+  if (![scanner scanUpToString:@"value=\"" intoString:nil]) {
+    log_detail(@"Unable to find value attribute");
     return NO;
   }
-  if (![scanner scanString:@"<code>" intoString:NULL]) {
-    log_detail(@"Unable to scan <code> tag");
+  if (![scanner scanString:@"value=\"" intoString:NULL]) {
+    log_detail(@"Unable to scan value attribute tag");
     return NO;
   }
   
   // Grab entire code block
-  if (![scanner scanUpToString:@"</code>" intoString:&totalCodeBlock]) {
-    log_detail(@"Unable to scan entire <code> block");
+  if (![scanner scanUpToString:@"\">" intoString:&totalCodeBlock]) {
+    log_detail(@"Unable to scan entire value block");
     return NO;
   }
   
-  log_detail(@"Code block: %@", totalCodeBlock);
-  NSArray *a = [totalCodeBlock componentsSeparatedByString:@"\n"];
-  log_detail(@"Components: %@", a);
   self.tempAPIKey = NULL;
-  for (int i=0; i<a.count; i++) {
-    NSString *line = a[i];
-    NSScanner *s = [NSScanner scannerWithString:line];
-    if (![s scanString:@"API Key" intoString:NULL]) {
-      continue;
-    }
-    NSString *key = [line stringByReplacingCharactersInRange:NSMakeRange(0, 9) withString:@""];
-    key = [key stringByReplacingOccurrencesOfString:@":" withString:@""];
-    key = [key stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    log_detail(@"API KEY: %@", key);
-    self.tempAPIKey = key;
-  }
-  
+  self.tempAPIKey = totalCodeBlock;
   return (self.tempAPIKey != NULL);
 }
 - (NSString *)apiKey {
