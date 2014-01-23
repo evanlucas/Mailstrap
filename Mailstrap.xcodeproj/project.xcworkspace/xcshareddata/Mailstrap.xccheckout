@@ -5,15 +5,15 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F8256E5E-1A41-489E-B6C7-825DF7493215</string>
+	<string>72D8BD40-AA42-4295-A527-9D2DB84224AA</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Mailstrap</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>078EB526-12CA-4C88-BDE3-6396863DC799</key>
 		<string>https://github.com/evanlucas/IndeterminateProgressView</string>
-		<key>957FB3A9-6154-4ABB-A21B-FE359A221E2A</key>
-		<string>ssh://github.com/evanlucas/Mailstrap</string>
+		<key>EFEB08EC-3FE9-4043-A105-EF8500C3D14F</key>
+		<string>ssh://github.com/evanlucas/Mailstrap.git</string>
 		<key>F3AEF365-FC24-4C8B-8740-B09D6C47C536</key>
 		<string>https://github.com/AFNetworking/AFNetworking</string>
 	</dict>
@@ -23,17 +23,17 @@
 	<dict>
 		<key>078EB526-12CA-4C88-BDE3-6396863DC799</key>
 		<string>../../Mailstrap/Controls/IndeterminateProgressView</string>
-		<key>957FB3A9-6154-4ABB-A21B-FE359A221E2A</key>
+		<key>EFEB08EC-3FE9-4043-A105-EF8500C3D14F</key>
 		<string>../..</string>
 		<key>F3AEF365-FC24-4C8B-8740-B09D6C47C536</key>
 		<string>../../Mailstrap/Utils/AFNetworking</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/evanlucas/Mailstrap</string>
+	<string>ssh://github.com/evanlucas/Mailstrap.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>957FB3A9-6154-4ABB-A21B-FE359A221E2A</string>
+	<string>EFEB08EC-3FE9-4043-A105-EF8500C3D14F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -56,7 +56,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>957FB3A9-6154-4ABB-A21B-FE359A221E2A</string>
+			<string>EFEB08EC-3FE9-4043-A105-EF8500C3D14F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Mailstrap</string>
 		</dict>

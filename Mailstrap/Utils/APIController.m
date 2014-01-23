@@ -128,8 +128,8 @@ static APIController *controller = nil;
     log_detail(@"Unable to find account information");
     return NO;
   }
+  log_detail(@"s: %@", s);
   
-  // Make sure we can find the <code> block (that is where the API Key resides)
   NSString *totalCodeBlock = NULL;
   if (![scanner scanUpToString:@"value=\"" intoString:nil]) {
     log_detail(@"Unable to find value attribute");
@@ -206,6 +206,9 @@ static APIController *controller = nil;
   }
   return YES;
 }
+
+// Server not setup
+// Who wants to be bugged by a bunch of push notifications anyways
 - (void)sendToken:(NSString *)token {
   NSLog(@"Sending token: %@", token);
   NSURL *url = [NSURL URLWithString:kAPIPushClientBaseURLString];
