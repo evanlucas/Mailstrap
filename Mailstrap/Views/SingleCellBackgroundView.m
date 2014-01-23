@@ -20,11 +20,11 @@
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     UIColor *start = [UIColor colorWithWhite:0.15 alpha:0.9];
     UIColor *end = [UIColor colorWithWhite:0.13 alpha:0.9];
-    CGContextSaveGState(ctx);
-    CGMutablePathRef path = createRoundedRectForRect(rect, 10);
-    CGContextAddPath(ctx, path);
-    CGContextClip(ctx);
+//    CGContextSaveGState(ctx);
+//    CGMutablePathRef path = createRoundedRectForRect(rect, 10);
+//    CGContextAddPath(ctx, path);
+//    CGContextClip(ctx);
     drawLinearGradientC(ctx, rect, start, end);
-    CGContextRestoreGState(ctx);
+//    CGContextRestoreGState(ctx);
 }
 @end
