@@ -35,6 +35,7 @@
     [self.segControlAccessLevel setDividerImage:[ImageUtil imageWithColor:[UIColor mailstrapBlueColor] size:CGSizeMake(2, height)] forLeftSegmentState:UIControlStateSelected rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [self.segControlAccessLevel setDividerImage:[ImageUtil imageWithColor:[UIColor mailstrapBlueColor] size:CGSizeMake(2, height)] forLeftSegmentState:UIControlStateHighlighted rightSegmentState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
     [self.segControlAccessLevel setTitleTextAttributes:@{UITextAttributeTextColor : [UIColor whiteColor], UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0, 0)], UITextAttributeFont: [UIFont boldSystemFontOfSize:font]} forState:UIControlStateNormal];
+  [self.segControlAccessLevel setTitleTextAttributes:@{UITextAttributeTextColor: [UIColor colorWithWhite:0.9 alpha:1.0], UITextAttributeTextShadowOffset:[NSValue valueWithUIOffset:UIOffsetMake(0, 0)], UITextAttributeFont: [UIFont boldSystemFontOfSize:font]} forState:UIControlStateSelected];
     if (!self.addMode) {
         if (self.mailingList) {
             self.textName.text = self.mailingList.name;
