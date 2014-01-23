@@ -43,6 +43,7 @@
     [self.segControlLoginType setDividerImage:[ImageUtil imageWithColor:[UIColor mailstrapBlueColor] size:CGSizeMake(2, height)] forLeftSegmentState:UIControlStateSelected rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [self.segControlLoginType setDividerImage:[ImageUtil imageWithColor:[UIColor mailstrapBlueColor] size:CGSizeMake(2, height)] forLeftSegmentState:UIControlStateHighlighted rightSegmentState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
     [self.segControlLoginType setTitleTextAttributes:@{UITextAttributeTextColor : [UIColor whiteColor], UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0, 0)], UITextAttributeFont: [UIFont boldSystemFontOfSize:font]} forState:UIControlStateNormal];
+    [self.segControlLoginType setTitleTextAttributes:@{UITextAttributeTextColor: [UIColor colorWithWhite:0.9 alpha:1], UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0, 0) ], UITextAttributeFont: [UIFont boldSystemFontOfSize:font]} forState:UIControlStateSelected];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
