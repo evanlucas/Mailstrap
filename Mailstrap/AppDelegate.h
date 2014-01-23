@@ -13,6 +13,7 @@
 @property (strong, nonatomic) UIWindow *window;
 + (UIInterfaceOrientation)orientation;
 + (BOOL)is_iOS6;
++ (BOOL)is_iOS7;
 + (BOOL)is_iPhone;
 
 @end

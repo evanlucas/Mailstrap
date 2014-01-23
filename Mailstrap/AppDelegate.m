@@ -18,6 +18,9 @@
 + (BOOL)is_iOS6 {
     return ([[[[UIDevice currentDevice] systemVersion] componentsSeparatedByString:@"."][0] intValue] == 6);
 }
++ (BOOL)is_iOS7 {
+  return ([[[[UIDevice currentDevice] systemName] componentsSeparatedByString:@"."][0] intValue] == 7);
+}
 + (BOOL)is_iPhone {
     return (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone);
 }
