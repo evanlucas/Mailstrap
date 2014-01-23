@@ -13,7 +13,7 @@
     
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     UIColor *start = [UIColor colorWithWhite:0.15 alpha:0.9];
-    UIColor *end = [UIColor colorWithWhite:0.13 alpha:0.9];
+    UIColor *end = [UIColor colorWithWhite:0.14 alpha:0.9];
     CGContextSaveGState(ctx);
     drawLinearGradientC(ctx, rect, start, end);
 //    CGContextSetFillColorWithColor(ctx, end.CGColor);
