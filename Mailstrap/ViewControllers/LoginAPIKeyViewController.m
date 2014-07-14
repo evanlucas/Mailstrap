@@ -88,7 +88,10 @@
   }
   [self.loginDelegate beganLoggingInAPI];
   [[APIController sharedInstance] loginWithAPIKey:self.apikey res:^(NSDictionary *res){
-    [self.loginDelegate finishedLoginWithResponseAPI:res];
+    // @HACK pass-through the api key that was entered by the user because Mailgun no longer returns it
+    NSMutableDictionary *mRes = [res mutableCopy];
+    [mRes setObject:self.apikey forKey:@"key"];
+    [self.loginDelegate finishedLoginWithResponseAPI:mRes];
   }err:^(NSDictionary *err){
     [self.loginDelegate finishedLoginWithErrorAPI:err];
   }];

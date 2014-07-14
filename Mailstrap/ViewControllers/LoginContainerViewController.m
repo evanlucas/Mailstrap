@@ -178,6 +178,10 @@
         [[APIController sharedInstance] setApiKey:response[@"key"]];
         [self performSelector:@selector(dismissThis) withObject:nil afterDelay:0.3];
     }
+    else {
+        [self.labelError setText:@"Unexpected API Response."];
+        [self.labelError setTextColor:[UIColor redColor]];
+    }
 }
 - (void)beganLoggingIn {
     log_detail(@"Began logging in");
